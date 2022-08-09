@@ -1,11 +1,15 @@
 import { Meteor } from 'meteor/meteor';
 import { LinksCollection } from '/imports/api/links';
+import { CharacterCollection } from '/imports/api/CharacterData'
+import { CharacterForm } from '/imports/ui/CharacterForm.jsx'
 
 function insertLink({ title, url }) {
   LinksCollection.insert({title, url, createdAt: new Date()});
 }
 
+
 Meteor.startup(() => {
+
   // If the Links collection is empty, add some data.
   if (LinksCollection.find().count() === 0) {
     insertLink({
@@ -24,7 +28,7 @@ Meteor.startup(() => {
     });
 
     insertLink({
-      title: 'Discussions',
+      title: 'Testing',
       url: 'https://forums.meteor.com'
     });
   }
