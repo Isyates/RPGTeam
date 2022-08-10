@@ -6,6 +6,7 @@ const jobOptions = ['Squire','Chemist','Monk','Thief','Time Mage',
 'Bard','Mime','Knight','Archer','Black Mage','White Mage',
 'Geomancer','Dragoon','Summoner','Orator','Onion Knight','Dark Knight']
 
+
 export const CharacterForm = () => {
   const [text, setText] = useState("");
 
@@ -14,9 +15,15 @@ export const CharacterForm = () => {
 
     if (!text) return;
 
+    jobNumber = Math.floor(Math.random() * 22)
+    jobString  = jobOptions[jobNumber]
+    jobStringShort = jobString.replace(' ', '')
     CharacterCollection.insert({
       name: text.trim(),
-      job: jobOptions[Math.floor(Math.random() * 22)]
+      job: jobString,
+      jobProfileImg: `http://www.videogamesprites.net/FinalFantasyTactics/Jobs/${jobStringShort}/${jobStringShort}1M.gif`,
+      jobClassImg: `http://www.videogamesprites.net/FinalFantasyTactics/Jobs/${jobStringShort}/${jobStringShort}1M-SW.gif`
+
     });
 
     setText("");
