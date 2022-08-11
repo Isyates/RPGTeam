@@ -12,7 +12,7 @@ return (
 
     <div>
         
-    <h1>This is {character.name}</h1>
+     <h1>This is {character.name}</h1>
     <h2>Their Job is {character.job}</h2>
     </div>
 
