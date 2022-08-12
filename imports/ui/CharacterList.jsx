@@ -10,21 +10,25 @@ const jobOptions = ['Squire','Chemist','Monk','Thief','Time Mage',
 
 const deleteCharacter = ({ _id }) => CharacterCollection.remove(_id)
 
-let selectedCharacter = CharacterCollection.findOne()
 
 
- const chooseNew = ({_id}) => {
-   selectedCharacter = CharacterCollection.findOne({_id})
+ const CharSelect = (charid) =>{
+  let char = CharacterCollection.findOne()
+   char =  CharacterCollection.findOne({_id:charid})
   
 
- }
+    console.log(char)
+    let newval = char
+    return (
+    newval
+   
+  )
+    
+  }
+
+  // console.log(newval)
 
 
-
-
-
-
-console.log(selectedCharacter)
 
 export const CharList = () =>{
   const characters = useTracker(() => {
@@ -32,29 +36,23 @@ export const CharList = () =>{
   })
 
 
-
-
-
 return (
-selectedCharacter &&
+
 <div>
 
-{/* 
- <h2>character is {selectedCharacter.name}</h2>  */}
- <img src={selectedCharacter.jobProfileImg} width='9%' alt="" />
- <div><h2>{selectedCharacter.job} <img src={selectedCharacter.jobClassImg} alt="" /></h2></div>
 
 
 
-<h1></h1>
- {console.log(selectedCharacter)}
+
+<h1>this is </h1>
+
 <ul>{characters.map(
   character =>
   <div>
     
     <button onClick= {() => deleteCharacter(character)}>Delete</button>
   <ul key={character._id}>
-  <button onClick={ () => [chooseNew({_id:character._id, _id:character._id}) ]}>find </button>
+  <button value='testing'onClick= {() => CharSelect(character._id)}>setStatus button </button>
     <h2>{character._id}</h2>
     <h2>{character.name}</h2>
     <h2>{character.job}</h2>
@@ -62,7 +60,8 @@ selectedCharacter &&
   </ul>
   </div> 
 )}</ul>
-<h2>character is {selectedCharacter.name}</h2>
+
+
 </div>
 
 );

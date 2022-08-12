@@ -4,14 +4,14 @@ import { ChooseNew } from './CharacterList'
 
 testUpdate = CharacterCollection.findOne({_id: 'Bpstk8RXzYsKoXgDH' })
 
-console.log(CharacterCollection.find({_id: 'Bpstk8RXzYsKoXgDH' }))
+// console.log(CharacterCollection.find({_id: 'Bpstk8RXzYsKoXgDH' }))
 
-console.log(testUpdate)
+// console.log(testUpdate)
 
 export const Hello = () => {
   const [counter, setCounter] = useState(CharacterCollection.job)
 
-  console.log(counter)
+  // console.log(counter)
 
 
 
