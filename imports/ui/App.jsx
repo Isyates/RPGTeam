@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hello } from './Hello.jsx';
+import { JobChange } from './JobChange.jsx';
 import { Info } from './Info.jsx';
 import { CharList, ChooseNew} from './CharacterList.jsx';
 import { CharacterForm } from './CharacterForm.jsx';
@@ -10,10 +10,9 @@ export const App = () => {
   const [charas,setCharas] = useState(null)
   return ( 
   <div>
+    <JobChange charas={charas} setCharas={setCharas}/>
     <CharacterDetail charas={charas} />
-    <h1>Welcome to Meteor!</h1>
-    <CharacterForm/>
-    {/* <Hello/> */}
+    <CharacterForm charas={charas} setCharas={setCharas}/>
     <CharList charas={charas} setCharas={setCharas}/>
 
     

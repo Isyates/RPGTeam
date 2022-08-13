@@ -21,7 +21,6 @@ export const CharList = ({charas, setCharas}) =>{
 return (
 <div>
 
-
 <ul>{characters.map(
   character =>
   <div>
