@@ -1,19 +1,29 @@
 import React from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
 import { CharacterCollection } from '../api/CharacterData';
+import {LinksCollection} from '../api/links'
 
 
-const deleteCharacter = ({ _id }) => CharacterCollection.remove(_id)
 
-var selectedCharacter = CharacterCollection.findOne({})
 
- const chooseNew = ({_id}) => {
+let selectedId = CharacterCollection.find().fetch()[0]._id
+
+console.log(selectedId)
+
+let selectedCharacter = CharacterCollection.findOne({_id:selectedId})
+
+ export const chooseNew = ({_id}) => {
+  
   selectedCharacter = CharacterCollection.findOne({_id:_id})
   
 
+  console.log(selectedCharacter)
+
 }
 
-console.log(selectedCharacter)
+[0]
+
+const deleteCharacter = ({ _id }) => CharacterCollection.remove(_id)
 
 export const CharList = () =>{
   const characters = useTracker(() => {
@@ -25,10 +35,13 @@ export const CharList = () =>{
 
 return (
 <div>
- <h1>testing</h1>
 
 
  <h2>character is {selectedCharacter.name}</h2>
+ <img src={selectedCharacter.jobProfileImg} width="9%" alt="" />
+ <div>
+ <h3><img src={selectedCharacter.jobClassImg} alt="" />class: {selectedCharacter.job}</h3>
+ </div>
  {console.log(selectedCharacter)}
 <ul>{characters.map(
   character =>
@@ -40,7 +53,6 @@ return (
     <h2>{character._id}</h2>
     <h2>{character.name}</h2>
     <h2>{character.job}</h2>
-    <img src={character.jobProfileImg} alt="" />
   </ul>
   </div> 
 )}</ul>
