@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { CharacterCollection } from '../api/CharacterData';
 
 const jobOptions = ['Squire','Chemist','Monk','Thief','Time Mage',
-'Mystic','Samurai','Ninja','Arithmetician','Dancer',
-'Bard','Mime','Knight','Archer','Black Mage','White Mage',
+'Mystic','Samurai','Ninja','Arithmetician',
+'Mime','Knight','Archer','Black Mage','White Mage',
 'Geomancer','Dragoon','Summoner','Orator','Onion Knight','Dark Knight']
 
 

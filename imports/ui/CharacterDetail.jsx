@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 import { CharacterCollection } from '../api/CharacterData';
 import { useTracker } from 'meteor/react-meteor-data';
-import { CharList } from './CharacterList';
 
-export const CharacterDetail = () =>{
-    const character = useTracker((_id) => {
-        return CharacterCollection.find(_id).fetch(_id)
-})
 
+
+export const CharacterDetail = ({charas}) =>{
+
+    console.log({charas})
+
+    
 return (
-
-    <div>
+    charas && (<div>
         
-     <h1>This is {character.name}</h1>
-    <h2>Their Job is {character.job}</h2>
-    </div>
+        <h1>This is {charas.name}</h1>
+       <h2>Their Job is {charas.job}</h2>
+       <img src={charas.jobProfileImg} width='9%' alt={charas.job} image />
+       <img src={charas.jobClassImg} alt={charas.job} image />
+       </div>
+   )
+
 
 )
 
