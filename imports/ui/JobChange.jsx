@@ -8,16 +8,21 @@ import {LinksCollection} from '../api/links'
 
 export const JobChange = ({charas,setCharas}) =>{
     
-    console.log(charas)
 
-    const useTracker = event => {
+    const useTracker = (value) => {
+        let newJob = jobValue.value
+        let newjobTrim = newJob.replace(' ', '')
+        console.log(newjobTrim)
+        console.log(newJob)
+
         CharacterCollection.update ({_id:charas._id}, 
             {$set:{
-            job:'Ninja',
-            jobClassImg: 'http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Ninja/Ninja1M-SW.gif',
-            jobProfileImg:'http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Ninja/Ninja1M.gif'},
-            }
+            job:newJob,
+            jobClassImg: `http://www.videogamesprites.net/FinalFantasyTactics/Jobs/${newjobTrim}/${newjobTrim}1M-SW.gif`,
+            jobProfileImg:`http://www.videogamesprites.net/FinalFantasyTactics/Jobs/${newjobTrim}/${newjobTrim}1M.gif`,
+            }}
             )
+        
     }
 
    
@@ -33,13 +38,13 @@ return (
     
     <div>
 <label for="membership">Change Job</label>
-<select name="membership" >
-  <option value="Squire">Squire</option>
+<select name="membership" id='jobValue' defaultValue='Chemist' >
+  <option value="Squire" >Squire</option>
   <option value="Chemist">Chemist</option>
   <option value="Black Mage">Black Mage</option>
   <option value="White Mage">White Mage</option>
 </select>
-    <input name='membership'type='submit' value='submit' onClick={() => useTracker(charas)}/>
+    <input name='membership' type='submit' value='submit' defaultValue='Squire' onClick={() => useTracker(charas)}/>
 </div>
 )
 }
