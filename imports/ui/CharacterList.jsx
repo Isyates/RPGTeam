@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useTracker, useFind } from 'meteor/react-meteor-data';
-import { CharacterCollection } from '../api/CharacterData';
+import { CharacterCollection } from '../api/CharacterCollection';
 
 
 

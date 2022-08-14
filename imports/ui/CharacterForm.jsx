@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CharacterCollection } from '../api/CharacterData';
+import { CharacterCollection } from '../api/CharacterCollection';
 
 const jobOptions = ['Squire','Chemist','Monk','Thief','Time Mage',
 'Mystic','Samurai','Ninja','Arithmetician',

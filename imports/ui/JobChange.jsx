@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CharacterCollection } from '../api/CharacterData';
+import { CharacterCollection } from '../api/CharacterCollection';
 
 
 
