@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { CharacterCollection } from '../api/CharacterData';
-import { useTracker } from 'meteor/react-meteor-data';
+
 
 
 
