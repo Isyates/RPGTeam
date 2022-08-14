@@ -1,7 +1,6 @@
 import React from 'react';
 import { JobChange } from './JobChange.jsx';
-import { Info } from './Info.jsx';
-import { CharList, ChooseNew} from './CharacterList.jsx';
+import { CharList } from './CharacterList.jsx';
 import { CharacterForm } from './CharacterForm.jsx';
 import { CharacterDetail } from './CharacterDetail.jsx';
 import { useState } from 'react';

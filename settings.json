@@ -1,7 +1,7 @@
 {
-    "galaxy.meteor.com": {
-       "env": {
-         "MONGO_URL": "mongodb://<dbuser>:<dbpassword>@<dbserver>:<dbport>/<dbname>"
-       }
+  "galaxy.meteor.com": {
+     "env": {
+       "MONGO_URL": "'mongodb+srv://SEIisyates:SEI1234@sei.4scpj.mongodb.net/rpgteamdb?retryWrites=true&w=majority'"
      }
-  }
+   }
+}
