@@ -30,6 +30,7 @@ export const CharacterForm = () => {
   };
  
   return (
+    <div>
     <form className="task-form" onSubmit={handleSubmit}>
       <input
         type="text"
@@ -40,5 +41,6 @@ export const CharacterForm = () => {
 
       <button type="submit">Recruit</button>
     </form>
+    </div>
   );
 };

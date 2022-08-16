@@ -9,11 +9,16 @@ import { useState } from 'react';
 export const App = () => {
   const [charas,setCharas] = useState(null)
   return ( 
-  <div>
-    <JobChange charas={charas} setCharas={setCharas}/>
+  <div class='columns'>
+    
+    <div class='column is-one-third'>
     <CharacterDetail charas={charas} />
+    <JobChange charas={charas} setCharas={setCharas}/>
+    </div>
+    <div class='column'>
     <CharacterForm charas={charas} setCharas={setCharas}/>
     <CharList charas={charas} setCharas={setCharas}/>
+    </div>
 
     
   </div>

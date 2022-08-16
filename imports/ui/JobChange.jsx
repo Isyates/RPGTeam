@@ -34,14 +34,14 @@ if (!charas) {
 }else{
     
 return (
-    
-    
-    <div>
+
+<div>    
+    <div class='box' >
 
 
-<img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Squire/Squire1M-SW.gif" id='jobValue' value='Squire' alt="" onClick={() => useTracker('Squire')} />
+<img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Squire/Squire1M-SW.gif"  id='jobValue' value='Squire' alt="" onClick={() => useTracker('Squire')} />
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Chemist/Chemist1M-SW.gif" id='jobValue' value='Chemist' alt="" onClick={() => useTracker('Chemist')} />
-<img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Monk/Monk1M-SW.gif" id='jobValue' value='Monk' alt="" onClick={() => useTracker('Monk')} />
+<img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Monk/Monk1M-SW.gif"  id='jobValue' value='Monk' alt="" onClick={() => useTracker('Monk')} />
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/TimeMage/TimeMage1M-SW.gif" id='jobValue' value='Time Mage' alt="" onClick={() => useTracker('Time Mage')} />
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Mystic/Mystic1M-SW.gif" id='jobValue' value='Mystic' alt="" onClick={() => useTracker('Mystic')} />
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Samurai/Samurai1M-SW.gif" id='jobValue' value='Samurai' alt="" onClick={() => useTracker('Samurai')} />
@@ -59,6 +59,7 @@ return (
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/OnionKnight/OnionKnight1M-SW.gif" id='jobValue' value='Onion Knight' alt="" onClick={() => useTracker('Onion Knight')} />
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/DarkKnight/DarkKnight1M-SW.gif" id='jobValue' value='Dark Knight' alt="" onClick={() => useTracker('Dark Knight')} />
 
+</div>
 </div>
 )
 }
