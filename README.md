@@ -9,7 +9,7 @@ A project for the learning and implementation of new technologies using a belove
 | Developers   | Isiah Yates                                                         |
 | Live Site    | [RPG Team](https://rpgteam-iy.meteorapp.com/)   |
 | Technologies | [Meteor JS](https://www.meteor.com/), React, [Bulma](https://bulma.io/)                                       |
-| Planning     | [Trello Board]([https://rpgteam-iy.meteorapp.com/](https://trello.com/b/D5AIRwW0/rpg-team)) |
+| Planning     | [Trello Board](https://trello.com/b/D5AIRwW0/rpg-team) |
 
 
 ## RPG Team Mockup Diagram
