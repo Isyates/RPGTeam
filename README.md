@@ -13,7 +13,7 @@ A project for the learning and implementation of new technologies using a belove
 
 
 ## RPG Team Mockup Diagram
-<img width="838" alt="image" src="https://user-images.githubusercontent.com/100257983/185259227-26e53972-7fa0-431d-9eba-2174ab66ebe1.png">
+<img width="500" alt="image of project mockup" src="https://user-images.githubusercontent.com/100257983/185259227-26e53972-7fa0-431d-9eba-2174ab66ebe1.png">
 
 ## User Stories
 - Users should be able to view the page with changes based on screen dimensions
