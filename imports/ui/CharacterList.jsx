@@ -6,7 +6,6 @@ import { CharacterCollection } from '../api/CharacterCollection';
 
 
 
-const deleteCharacter = ({ _id }) => CharacterCollection.remove(_id)
 
 export const CharList = ({charas, setCharas}) =>{
   const characters = useTracker(() => {
@@ -19,17 +18,15 @@ export const CharList = ({charas, setCharas}) =>{
 return (
 <div>
 
-<ul>{characters.map(
+<ul>{characters.reverse().map(
   character =>
-  <div>
+  <div class='box'  id='charlists'value={character}onClick={ () => setCharas(character) }>
     
-    <button onClick= {() => deleteCharacter(character)}>Delete</button>
   <ul key={character._id}>
- 
-  <button value={character}onClick={ () => setCharas(character) }>Show detail</button>
   
-    <h2>{character.name}</h2>
-    <h2>{character.job}</h2>
+    <h1 class='title is-4'>{character.name} </h1>
+    <h2 class='subtitle is-5'>{character.job} </h2>
+
   </ul>
   </div> 
 )}</ul>

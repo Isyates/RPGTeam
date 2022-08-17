@@ -1,4 +1,41 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+html{
+  background-color: #e2e4dd
+}
+
 body {
   padding: 10px;
   font-family: sans-serif;
+  background-color: #e2e4dd;
 }
+
+#jobValue {
+  opacity: 0.5;
+}
+
+#detailCard{
+  background-color: #ddcead
+}
+
+#jobValue:hover {
+  opacity: 1.0;
+}
+
+#charlists{
+  background-color: #ddcead
+}
+
+#jobChangeBox{
+  background-color: #ddcead
+}
+
+#jobChangeTitleBox{
+  background-color: #d2c2a0
+
+}
+
+#footer{
+  background-color: #ddcead
+}
+
