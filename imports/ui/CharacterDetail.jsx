@@ -13,7 +13,7 @@ return (
     charas && (<div>
 
 
-<div class="card" >
+<div class="card" id='detailCard' >
 
   <div class="card-content">
     <div class="media">
@@ -23,11 +23,12 @@ return (
         </figure>
       </div>
       <div class="media-content">
-        <p class="title is-4">{charas.name}</p>
-        <p class="subtitle is-6">{charas.job}</p>
+        <p class="title is-3">{charas.name}</p>
+
         <figure>
         
         <img src={charas.jobClassImg} alt={charas.job} image />
+        <p class="subtitle is-6">{charas.job}</p>
         </figure>
       </div>
     </div>
@@ -38,10 +39,10 @@ return (
     </div>
   </div>
 </div>
-        
-
+<br />
        </div>
    )
+
 
 
 

@@ -35,11 +35,15 @@ if (!charas) {
     
 return (
 
+
 <div>    
-    <div class='box' >
 
+    <div class='box' id='jobChangeBox' >
+    <div class='box title is-3 has-text-centered' id='jobChangeTitleBox'>
+        Available Promotions
+    </div>
+<img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Squire/Squire1M-SW.gif"   id='jobValue' value='Squire' alt="" onClick={() => useTracker('Squire')} />
 
-<img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Squire/Squire1M-SW.gif"  id='jobValue' value='Squire' alt="" onClick={() => useTracker('Squire')} />
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Chemist/Chemist1M-SW.gif" id='jobValue' value='Chemist' alt="" onClick={() => useTracker('Chemist')} />
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/Monk/Monk1M-SW.gif"  id='jobValue' value='Monk' alt="" onClick={() => useTracker('Monk')} />
 <img src="http://www.videogamesprites.net/FinalFantasyTactics/Jobs/TimeMage/TimeMage1M-SW.gif" id='jobValue' value='Time Mage' alt="" onClick={() => useTracker('Time Mage')} />

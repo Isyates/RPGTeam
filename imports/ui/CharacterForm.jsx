@@ -32,14 +32,14 @@ export const CharacterForm = () => {
   return (
     <div>
     <form className="task-form" onSubmit={handleSubmit}>
-      <input
+      <input class="input is-normal $input-color $grey-darker"
         type="text"
         placeholder="Type the name of the recruited character"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
 
-      <button type="submit">Recruit</button>
+      <button class="button is-dark is-fullwidth"type="submit">Recruit</button>
     </form>
     </div>
   );

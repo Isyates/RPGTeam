@@ -17,6 +17,7 @@ export const App = () => {
     </div>
     <div class='column'>
     <CharacterForm charas={charas} setCharas={setCharas}/>
+    <br />
     <CharList charas={charas} setCharas={setCharas}/>
     </div>
 

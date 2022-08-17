@@ -20,16 +20,14 @@ export const CharList = ({charas, setCharas}) =>{
 return (
 <div>
 
-<ul>{characters.map(
+<ul>{characters.reverse().map(
   character =>
-  <div class='box'>
+  <div class='box'  id='charlists'value={character}onClick={ () => setCharas(character) }>
     
   <ul key={character._id}>
- 
-  <button value={character}onClick={ () => setCharas(character) }>Show detail</button>
   
-    <h1>Name: {character.name} </h1>
-    <h2>Job: {character.job} </h2>
+    <h1 class='title is-4'>{character.name} </h1>
+    <h2 class='subtitle is-5'>{character.job} </h2>
 
   </ul>
   </div> 
