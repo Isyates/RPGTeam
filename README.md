@@ -5,7 +5,7 @@ A case study into the use of technologies using a beloved franchise as inspirati
 | Project Name | RPG Team                                                |
 |--------------|---------------------------------------------------------------------|
 | Developers   | Isiah Yates                                                         |
-| Live Site    | [RPG Team]([https://keyboarddatabase-iy90.herokuapp.com/](https://rpgteam-iy.meteorapp.com/))   |
+| Live Site    | [RPG Team](https://rpgteam-iy.meteorapp.com/)   |
 | Technologies | [Meteor JS](https://www.meteor.com/), React, [Bulma](https://bulma.io/)                                       |
 | Planning     | [Trello Board]([https://rpgteam-iy.meteorapp.com/](https://trello.com/b/D5AIRwW0/rpg-team)) |
 
