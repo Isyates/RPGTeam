@@ -29,14 +29,17 @@ return (
         
         <img src={charas.jobClassImg} alt={charas.job} image />
         <p class="subtitle is-6">{charas.job}</p>
+        
         </figure>
       </div>
+      
     </div>
 
     <div class="content">
       <br></br>
       <button class="button is-dark is-medium is-fullwidth" onClick= {() => deleteCharacter(charas)}>Delete</button>
     </div>
+    
   </div>
 </div>
 <br />

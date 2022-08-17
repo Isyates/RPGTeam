@@ -29,7 +29,7 @@ export const JobChange = ({charas,setCharas}) =>{
 
 if (!charas) {
     return(
-        <div>Select a Character to Job Change</div>
+        <div class='box has-text-centered'>Select a Character to Job Change</div>
     )
 }else{
     
